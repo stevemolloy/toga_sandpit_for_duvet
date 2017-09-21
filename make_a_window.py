@@ -10,10 +10,8 @@ class MyApp(toga.App):
 
         main_box = toga.Box()
 
-        toolbar = self.make_toolbar()
-        main_box.add(toolbar)
-        maincontent = self.make_maincontent()
-        main_box.add(maincontent)
+        main_box.add(self.make_toolbar())
+        main_box.add(self.make_maincontent())
 
         main_window.content = main_box
         main_window.show()
