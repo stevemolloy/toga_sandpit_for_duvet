@@ -12,8 +12,8 @@ class MyApp(toga.App):
 
         toolbar = self.make_toolbar()
         main_box.add(toolbar)
-
-        main_box.add(self.make_maincontent())
+        maincontent = self.make_maincontent()
+        main_box.add(maincontent)
 
         main_window.content = main_box
         main_window.show()
